@@ -48,7 +48,7 @@ Available periods are `daily`, `weekly`, and `monthly`. The result limit can be 
 
 ## Dashboard
 
-The zero-dependency dashboard presents the latest curated Weekly Trending top ten with repository purpose, a concrete application example, and adoption risks.
+The zero-dependency dashboard presents two curated rankings: the Weekly Trending top ten and the ten repositories with the highest cumulative Star count. Both rankings include repository purpose, a concrete application example, and adoption risks.
 
 ```powershell
 cd dashboard

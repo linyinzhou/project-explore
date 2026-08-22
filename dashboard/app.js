@@ -1,4 +1,4 @@
-const repositories = [
+const trendingRepositories = [
   {
     rank: 1,
     owner: "public-apis",
@@ -121,32 +121,161 @@ const repositories = [
   },
 ];
 
+const mostStarredRepositories = [
+  {
+    rank: 1,
+    owner: "codecrafters-io",
+    name: "build-your-own-x",
+    url: "https://github.com/codecrafters-io/build-your-own-x",
+    language: "Markdown",
+    stars: 541915,
+    purpose: "汇集从零重建数据库、编程语言、操作系统、搜索引擎、Web 服务器和 AI 模型等技术的分步教程，用实现过程理解底层原理。",
+    example: "后端学习冲刺：选取自制数据库教程，用 Python 实现支持 SET、GET、TTL 和日志持久化的迷你键值库，再用基准测试比较内存与磁盘模式并提交技术复盘。",
+    risk: "教程来源与年代不一，完成教学实现不等于达到生产级安全、性能和容错标准。",
+  },
+  {
+    rank: 2,
+    owner: "sindresorhus",
+    name: "awesome",
+    url: "https://github.com/sindresorhus/awesome",
+    language: "列表",
+    stars: 498692,
+    purpose: "由社区维护的 Awesome Lists 总索引，覆盖编程语言、平台、安全、数据库、媒体、学习资源等主题；它是导航目录，不是软件包。",
+    example: "团队知识库选型：从 Awesome 中进入 self-hosted 相关清单，按许可证、全文搜索、权限和 Docker 部署筛出 3 个候选，分别搭建小型 PoC 后形成选型记录。",
+    risk: "被收录不代表项目经过安全或质量认证；子清单的维护活跃度和收录标准差异很大。",
+  },
+  {
+    rank: 3,
+    owner: "public-apis",
+    name: "public-apis",
+    url: "https://github.com/public-apis/public-apis",
+    language: "Python",
+    stars: 468094,
+    purpose: "社区维护的公共 API 导航目录，按领域标记鉴权、HTTPS 与 CORS 等信息；它本身不提供统一 API 服务。",
+    example: "马拉松比赛日助手：从目录选择地理编码和天气 API，把起跑地址转成坐标，再输出比赛时段温度、降雨、风速以及对应的补水和配速提醒。",
+    risk: "目录条目可能过期；Public 不等于免费、稳定或可商用，必须逐项核实配额与条款。",
+  },
+  {
+    rank: 4,
+    owner: "freeCodeCamp",
+    name: "freeCodeCamp",
+    url: "https://github.com/freeCodeCamp/freeCodeCamp",
+    language: "TypeScript",
+    stars: 454427,
+    purpose: "freeCodeCamp 的开源学习平台与课程代码库，提供自定进度的全栈、编程、数学和机器学习互动练习及认证项目。",
+    example: "跑团志愿者先完成响应式网页课程，再把认证项目改造成赛事信息站：包含路线说明、移动端配速表、报名表单校验和无障碍检查，作为个人作品集。",
+    risk: "课程完成和证书不能替代真实项目经验；自托管整个平台的体量、数据和维护成本都很高。",
+  },
+  {
+    rank: 5,
+    owner: "EbookFoundation",
+    name: "free-programming-books",
+    url: "https://github.com/EbookFoundation/free-programming-books",
+    language: "Python",
+    stars: 394970,
+    purpose: "按编程语言、主题和自然语言整理可免费获取的编程图书、课程、交互资源与播客，并提供搜索页面。",
+    example: "中文 Python 学习小组从中文书单选出语法、数据分析和 Web API 三类资源，排成 12 周计划；每周附阅读章节、练习仓库和一次代码评审。",
+    risk: "免费访问不一定意味着开放版权或内容仍然更新；外链可能失效，教材版本也可能落后。",
+  },
+  {
+    rank: 6,
+    owner: "openclaw",
+    name: "openclaw",
+    url: "https://github.com/openclaw/openclaw",
+    language: "TypeScript",
+    stars: 387057,
+    purpose: "运行在个人设备上的单用户 AI 助手，通过 Gateway 连接模型、工具、技能和 WhatsApp、Telegram、Slack 等消息渠道。",
+    example: "长跑训练助理：在 Telegram 发送“周六 20 公里 LSD”，助手调用日历和天气工具建立计划；周五根据高温预报推送起跑时间、补水点和装备清单。",
+    risk: "主会话工具可在宿主机执行操作；消息输入必须视为不可信，并正确配置配对、沙箱、密钥和远程暴露策略。",
+  },
+  {
+    rank: 7,
+    owner: "donnemartin",
+    name: "system-design-primer",
+    url: "https://github.com/donnemartin/system-design-primer",
+    language: "Python",
+    stars: 365318,
+    purpose: "系统讲解可扩展系统设计、缓存、负载均衡、数据库、消息队列和可用性，并提供面试题、真实架构资料与 Anki 卡片。",
+    example: "设计 Strava 式运动动态流：先估算日活和写入量，再画出上传 API、对象存储、活动队列、时间线缓存和分片数据库，最后说明一致性与成本取舍。",
+    risk: "材料偏学习与面试框架，示例数字和架构不能直接替代真实业务测量、压测与容量规划。",
+  },
+  {
+    rank: 8,
+    owner: "nilbuild",
+    name: "developer-roadmap",
+    url: "https://github.com/nilbuild/developer-roadmap",
+    language: "TypeScript",
+    stars: 365096,
+    purpose: "roadmap.sh 的社区驱动互动学习路线，覆盖前端、后端、DevOps、数据、AI、安全和多种语言，并为节点提供文章与测试题。",
+    example: "后端新人入职计划：从 Backend Beginner Roadmap 选取 HTTP、Git、数据库、API 与部署节点，拆成 8 周清单；每周用配套问题自测并交付一个递进式服务。",
+    risk: "路线图是知识地图而非统一课程，覆盖面容易制造完成焦虑；学习顺序仍要按岗位和已有基础裁剪。",
+  },
+  {
+    rank: 9,
+    owner: "jwasham",
+    name: "coding-interview-university",
+    url: "https://github.com/jwasham/coding-interview-university",
+    language: "文档",
+    stars: 359447,
+    purpose: "面向大型科技公司软件工程面试的多月计算机科学学习计划，覆盖数据结构、算法、复杂度、网络、系统设计与求职准备。",
+    example: "转岗者制定 16 周面试计划：每天学习一个主题并实现数组、树、图和排序；每周完成两次限时题，最后四周进行系统设计和模拟面试并记录错题。",
+    risk: "原作者的高强度路径不是普适工时标准；它侧重通用软件工程面试，不等同于前端或全栈岗位能力模型。",
+  },
+  {
+    rank: 10,
+    owner: "vinta",
+    name: "awesome-python",
+    url: "https://github.com/vinta/awesome-python",
+    language: "Python",
+    stars: 315378,
+    purpose: "按 AI、Web、数据库、数据分析、测试、DevOps、媒体和安全等类别整理 Python 框架、库、工具与资源。",
+    example: "比赛成绩 API 原型：从清单选择 FastAPI 类 Web 框架、数据校验库、ORM、测试和日志工具，做出成绩导入、选手查询和年龄组排名接口，再记录各库取舍。",
+    risk: "这是有主观筛选标准的目录；热门库也可能许可证不合适、维护停滞或与目标 Python 版本不兼容。",
+  },
+];
+
 const tableBody = document.querySelector("#repo-table-body");
 const searchInput = document.querySelector("#search");
 const languageFilter = document.querySelector("#language-filter");
 const emptyState = document.querySelector("#empty-state");
 const sortButtons = [...document.querySelectorAll(".sort-button")];
+const boardTabs = [...document.querySelectorAll(".leaderboard-tab")];
+const boardTitle = document.querySelector("#board-title");
+const boardDescription = document.querySelector("#board-description");
+const weeklyHeader = document.querySelector("#weekly-header");
 
+let activeBoard = "weekly";
 let sortKey = "weekly";
 let sortDirection = "desc";
 
 const formatNumber = new Intl.NumberFormat("zh-CN");
 
 function populateLanguageOptions() {
-  const languages = [...new Set(repositories.map((repo) => repo.language))].sort();
+  const currentValue = languageFilter.value;
+  languageFilter.replaceChildren();
+  const allOption = document.createElement("option");
+  allOption.value = "all";
+  allOption.textContent = "全部语言";
+  languageFilter.append(allOption);
+  const languages = [...new Set(getActiveRepositories().map((repo) => repo.language))].sort();
   languages.forEach((language) => {
     const option = document.createElement("option");
     option.value = language;
     option.textContent = language;
     languageFilter.append(option);
   });
+  languageFilter.value = languages.includes(currentValue) ? currentValue : "all";
+}
+
+function getActiveRepositories() {
+  return activeBoard === "weekly" ? trendingRepositories : mostStarredRepositories;
 }
 
 function getVisibleRepositories() {
   const query = searchInput.value.trim().toLocaleLowerCase("zh-CN");
   const selectedLanguage = languageFilter.value;
 
-  return repositories
+  return getActiveRepositories()
     .filter((repo) => selectedLanguage === "all" || repo.language === selectedLanguage)
     .filter((repo) => {
       if (!query) return true;
@@ -203,24 +332,48 @@ function renderTable() {
     starsCell.className = "number";
     starsCell.textContent = formatNumber.format(repo.stars);
 
-    const weeklyCell = document.createElement("td");
-    weeklyCell.className = "number growth";
-    weeklyCell.textContent = `+${formatNumber.format(repo.weekly)}`;
-
-    row.append(
+    const cells = [
       rankCell,
       repoCell,
       languageCell,
       starsCell,
-      weeklyCell,
       makeCell("", repo.purpose),
       makeCell("example-copy", repo.example),
       makeCell("risk-copy", repo.risk),
-    );
+    ];
+    if (activeBoard === "weekly") {
+      const weeklyCell = document.createElement("td");
+      weeklyCell.className = "number growth";
+      weeklyCell.textContent = `+${formatNumber.format(repo.weekly)}`;
+      cells.splice(4, 0, weeklyCell);
+    }
+    row.append(...cells);
     tableBody.append(row);
   });
 
   emptyState.hidden = visibleRepositories.length !== 0;
+}
+
+function selectBoard(board) {
+  activeBoard = board;
+  sortKey = board === "weekly" ? "weekly" : "stars";
+  sortDirection = "desc";
+  weeklyHeader.hidden = board !== "weekly";
+  boardTitle.textContent = board === "weekly"
+    ? "Weekly Trending Top 10"
+    : "Most Starred Top 10";
+  boardDescription.textContent = board === "weekly"
+    ? "按 GitHub Trending 最近一周显示的新增 Star 排序。"
+    : "按 2026-08-22 数据快照的累计 Star 总数排序。";
+  boardTabs.forEach((tab) => {
+    const isActive = tab.dataset.board === board;
+    tab.classList.toggle("active", isActive);
+    tab.setAttribute("aria-selected", String(isActive));
+  });
+  populateLanguageOptions();
+  const activeSortButton = document.querySelector(`[data-sort="${sortKey}"]`);
+  updateSortButtonState(activeSortButton);
+  renderTable();
 }
 
 function updateSortButtonState(activeButton) {
@@ -254,6 +407,9 @@ sortButtons.forEach((button) => {
 
 searchInput.addEventListener("input", renderTable);
 languageFilter.addEventListener("change", renderTable);
+boardTabs.forEach((tab) => {
+  tab.addEventListener("click", () => selectBoard(tab.dataset.board));
+});
 
 populateLanguageOptions();
 renderTable();
