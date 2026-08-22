@@ -391,6 +391,37 @@ tbody tr:last-child td {
   color: var(--ink);
 }
 
+.case-badge {
+  display: inline-flex;
+  margin-bottom: 9px;
+  padding: 4px 7px;
+  color: #cbd9d4;
+  background: #26312f;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.case-badge.unverified {
+  color: #d7b4a9;
+  background: #33231f;
+}
+
+.case-source {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--accent-dark);
+  font-size: 0.76rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.case-source:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .risk-copy {
   color: #e2ad9c;
 }

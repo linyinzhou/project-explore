@@ -8,7 +8,7 @@ const trendingRepositories = [
     stars: 468307,
     weekly: 10990,
     purpose: "社区维护的公共 API 导航目录，按领域列出鉴权、HTTPS 与 CORS 等信息；它不是统一 API 服务。",
-    example: "马拉松比赛日助手：用目录找到 Nominatim 与 Open-Meteo，把起跑地址转成坐标，再输出比赛时段温度、降雨、风速和配速提醒。",
+    example: "Public APIs 仓库本身就是实际运行的公共 API 目录，开发者可按类别、认证方式、HTTPS 和 CORS 条件查找服务；未找到可归因到该目录的具名第三方产品。",
     risk: "目录条目可能过期；Public 不等于免费、稳定或可商用，仍需逐项核实条款。",
   },
   {
@@ -20,7 +20,7 @@ const trendingRepositories = [
     stars: 114399,
     weekly: 10470,
     purpose: "输入主题或关键词，自动生成脚本、匹配素材、制作字幕与背景音乐，最终合成高清短视频。",
-    example: "博物馆探访短片：输入“庞贝古城壁画”，自动生成 60 秒文案、画面搜索词、旁白、字幕与竖屏成片，再由编辑核实史实后发布。",
+    example: "官方 WebUI、API 与 CLI 已实际提供短视频生成；README Gallery 展示了《When the City Wakes》《The Science Inside Coffee》等由该工具生成的竖屏和横屏成片。",
     risk: "生成内容可能出现事实错误；素材版权、模型 API 成本和平台内容规范需要人工审核。",
   },
   {
@@ -32,7 +32,7 @@ const trendingRepositories = [
     stars: 25262,
     weekly: 8457,
     purpose: "面向 Claude Code、Codex 等编码代理的图表设计技能，提供 39 类编辑级 HTML + SVG 图表。",
-    example: "项目架构图：让 Codex读取 GitHub Radar 代码，生成“数据抓取 → 排序 → 内容分析 → Dashboard”的静态 HTML/SVG，直接嵌入 README。",
+    example: "项目提供可直接浏览的 Diagram Design Live Gallery，实际展示架构图、流程图、时序图、ER 图、甘特图等 27 类静态 HTML/SVG 成品。",
     risk: "它优化的是表达与版式，不会验证架构本身是否正确；生成图仍需开发者复核。",
   },
   {
@@ -44,7 +44,7 @@ const trendingRepositories = [
     stars: 13422,
     weekly: 4054,
     purpose: "本地优先的 Logitech Options+ 替代方案，可管理按键映射、DPI、SmartShift、灯光与摄像头。",
-    example: "MX Master 工作流：在 VS Code 中拇指键运行测试，在 Chrome 中切换前进/后退，打开会议软件时自动切换摄像头曝光配置。",
+    example: "OpenLogi 本身是可安装的跨平台桌面应用，实际用于配置 Logitech 设备的按键映射、DPI、SmartShift 和按应用切换配置文件。",
     risk: "项目明确处于活跃开发且尚不稳定；设备、操作系统与连接方式的兼容性需实机验证。",
   },
   {
@@ -56,7 +56,7 @@ const trendingRepositories = [
     stars: 7045,
     weekly: 3614,
     purpose: "DeepSeek Harness 使用的插件元框架，用 Context、Service、依赖注入和类型化事件管理插件生命周期。",
-    example: "电影资料插件：向 Agent 注册 TMDb 查询工具和缓存服务；会话结束或插件重载时自动撤销事件监听与副作用，避免污染宿主。",
+    example: "DeepSeek Harness 是已公开运行的真实下游产品：其模型适配器、工具、文件访问、Agent Loop 和 Web UI 能力都作为 Cordis 插件挂载。",
     risk: "不是面向普通用户的完整应用，API 尚不稳定；目前更适合框架研究和可控原型。",
   },
   {
@@ -68,7 +68,7 @@ const trendingRepositories = [
     stars: 31864,
     weekly: 3033,
     purpose: "AI Agent 上下文数据库，把记忆、资源与技能组织为虚拟文件系统，并提供分层加载和可追踪检索。",
-    example: "个人编码记忆库：导入项目源码、README 和编码偏好，让 Codex 跨任务找回约定，并显示本次回答检索过哪些目录和文档。",
+    example: "OpenViking 已提供 Codex、Claude Code、OpenClaw、Cursor、DeepSeek Harness 等正式集成；Hermes Agent 将其作为内置记忆提供器使用。",
     risk: "需控制源码与个人记忆的访问权限；AGPL 许可证、索引成本和错误记忆传播都要评估。",
   },
   {
@@ -80,7 +80,7 @@ const trendingRepositories = [
     stars: 74359,
     weekly: 2987,
     purpose: "在本地桌面运行、训练和部署 LLM、扩散、嵌入及音频模型，并提供 OpenAI 兼容接口。",
-    example: "个人电影研究模型：用已标注影评微调一个本地中文模型，使其按导演、时代和美学主题归类影片，并通过本地 API 接入 Obsidian。",
+    example: "Unsloth Studio / Desktop 是项目提供的真实应用，可在本机下载、运行、训练和微调模型，并通过 OpenAI 兼容接口连接其他 Agent 工具。",
     risk: "训练效果取决于数据量与标注质量；硬件显存、基础模型许可证和输出幻觉不能忽略。",
   },
   {
@@ -92,7 +92,7 @@ const trendingRepositories = [
     stars: 8478,
     weekly: 2985,
     purpose: "面向微型设备的 14MB 工具调用与结构化提取模型，完整会话内存约 28MB，可离线推理。",
-    example: "离线跑步手表助手：识别“开始 8 组 400 米间歇，每组休息 90 秒”，转为结构化计时器参数并调用设备功能，无需上传语音文本到云端。",
+    example: "Cactus Engine 已把 Needle 作为可直接运行的设备端模型：使用 cactus run Cactus-Compute/needle 可测试 OpenAI 格式工具调用；项目也提供本地 Playground。",
     risk: "小模型能力边界明显；低置信度指令必须拒绝或交给用户确认，不能直接控制高风险设备。",
   },
   {
@@ -104,7 +104,7 @@ const trendingRepositories = [
     stars: 10183,
     weekly: 2755,
     purpose: "为 AI 系统构建上下文图、知识图谱、确定性推理与决策溯源，面向可审计和监管场景。",
-    example: "贷款审批审计：把申请数据、政策规则、模型建议与最终决策连接成图；监管审查时导出“使用了哪些事实、命中了哪条规则”的完整轨迹。",
+    example: "Semantica 已提供可安装的 Python 包、Knowledge Explorer、CLI、REST API 和 MCP Server，用于实际构建、浏览和导出知识图谱及决策审计轨迹；未找到具名客户案例。",
     risk: "它解释系统输入、规则和决策轨迹，不会揭示模型内部思维过程；企业数据治理成本较高。",
   },
   {
@@ -116,7 +116,7 @@ const trendingRepositories = [
     stars: 27901,
     weekly: 2565,
     purpose: "由 DHH 主导的现代、强观点 Linux 发行版，预设终端、Neovim、浏览器、AI 工具、快捷键和主题。",
-    example: "开发者新机标准化：在一台兼容电脑上安装 Omarchy，快速获得统一终端、编辑器、浏览器、截图录屏、剪贴板和 AI 编程环境。",
+    example: "Omarchy 是已经发布 ISO、安装程序与用户手册的真实 Linux 发行版，官网 omarchy.org 提供下载；项目由 37signals 孵化。",
     risk: "强观点配置不适合所有工作流；迁移前需验证硬件、公司安全策略、现有软件和数据备份。",
   },
 ];
@@ -130,7 +130,7 @@ const mostStarredRepositories = [
     language: "Markdown",
     stars: 541915,
     purpose: "汇集从零重建数据库、编程语言、操作系统、搜索引擎、Web 服务器和 AI 模型等技术的分步教程，用实现过程理解底层原理。",
-    example: "后端学习冲刺：选取自制数据库教程，用 Python 实现支持 SET、GET、TTL 和日志持久化的迷你键值库，再用基准测试比较内存与磁盘模式并提交技术复盘。",
+    example: "未找到可公开核实的第三方网站或 App 声明由该仓库构建；它本身是教程索引，而不是提供运行时能力的软件产品。",
     risk: "教程来源与年代不一，完成教学实现不等于达到生产级安全、性能和容错标准。",
   },
   {
@@ -141,7 +141,7 @@ const mostStarredRepositories = [
     language: "列表",
     stars: 498692,
     purpose: "由社区维护的 Awesome Lists 总索引，覆盖编程语言、平台、安全、数据库、媒体、学习资源等主题；它是导航目录，不是软件包。",
-    example: "团队知识库选型：从 Awesome 中进入 self-hosted 相关清单，按许可证、全文搜索、权限和 Docker 部署筛出 3 个候选，分别搭建小型 PoC 后形成选型记录。",
+    example: "awesome.re 是该项目的官方入口网站，实际提供跨平台、语言、数据库、安全和媒体等主题 Awesome Lists 导航；未找到可验证的第三方产品采用声明。",
     risk: "被收录不代表项目经过安全或质量认证；子清单的维护活跃度和收录标准差异很大。",
   },
   {
@@ -152,7 +152,7 @@ const mostStarredRepositories = [
     language: "Python",
     stars: 468094,
     purpose: "社区维护的公共 API 导航目录，按领域标记鉴权、HTTPS 与 CORS 等信息；它本身不提供统一 API 服务。",
-    example: "马拉松比赛日助手：从目录选择地理编码和天气 API，把起跑地址转成坐标，再输出比赛时段温度、降雨、风速以及对应的补水和配速提醒。",
+    example: "Public APIs 仓库本身就是实际运行的公共 API 目录，开发者可按类别、认证方式、HTTPS 和 CORS 条件查找服务；未找到可归因到该目录的具名第三方产品。",
     risk: "目录条目可能过期；Public 不等于免费、稳定或可商用，必须逐项核实配额与条款。",
   },
   {
@@ -163,7 +163,7 @@ const mostStarredRepositories = [
     language: "TypeScript",
     stars: 454427,
     purpose: "freeCodeCamp 的开源学习平台与课程代码库，提供自定进度的全栈、编程、数学和机器学习互动练习及认证项目。",
-    example: "跑团志愿者先完成响应式网页课程，再把认证项目改造成赛事信息站：包含路线说明、移动端配速表、报名表单校验和无障碍检查，作为个人作品集。",
+    example: "freeCodeCamp.org 是由该代码库实际运行的学习网站，提供数千个互动编码挑战、全栈与机器学习课程以及认证项目。",
     risk: "课程完成和证书不能替代真实项目经验；自托管整个平台的体量、数据和维护成本都很高。",
   },
   {
@@ -174,7 +174,7 @@ const mostStarredRepositories = [
     language: "Python",
     stars: 394970,
     purpose: "按编程语言、主题和自然语言整理可免费获取的编程图书、课程、交互资源与播客，并提供搜索页面。",
-    example: "中文 Python 学习小组从中文书单选出语法、数据分析和 Web API 三类资源，排成 12 周计划；每周附阅读章节、练习仓库和一次代码评审。",
+    example: "Free Programming Books Search 是该仓库实际发布的搜索 Web App，可按书名或作者检索多语言免费编程图书与课程。",
     risk: "免费访问不一定意味着开放版权或内容仍然更新；外链可能失效，教材版本也可能落后。",
   },
   {
@@ -185,7 +185,7 @@ const mostStarredRepositories = [
     language: "TypeScript",
     stars: 387057,
     purpose: "运行在个人设备上的单用户 AI 助手，通过 Gateway 连接模型、工具、技能和 WhatsApp、Telegram、Slack 等消息渠道。",
-    example: "长跑训练助理：在 Telegram 发送“周六 20 公里 LSD”，助手调用日历和天气工具建立计划；周五根据高温预报推送起跑时间、补水点和装备清单。",
+    example: "官方 Showcase 收录了 Vienna 公共交通查询、Oura Ring 健康助手、Bambu 3D 打印机控制、PR Review Telegram 反馈等具名社区项目。",
     risk: "主会话工具可在宿主机执行操作；消息输入必须视为不可信，并正确配置配对、沙箱、密钥和远程暴露策略。",
   },
   {
@@ -196,7 +196,7 @@ const mostStarredRepositories = [
     language: "Python",
     stars: 365318,
     purpose: "系统讲解可扩展系统设计、缓存、负载均衡、数据库、消息队列和可用性，并提供面试题、真实架构资料与 Anki 卡片。",
-    example: "设计 Strava 式运动动态流：先估算日活和写入量，再画出上传 API、对象存储、活动队列、时间线缓存和分片数据库，最后说明一致性与成本取舍。",
+    example: "未找到可公开核实的网站或 App 声明以该仓库作为产品依赖；它是系统设计学习材料和面试准备资源。",
     risk: "材料偏学习与面试框架，示例数字和架构不能直接替代真实业务测量、压测与容量规划。",
   },
   {
@@ -207,7 +207,7 @@ const mostStarredRepositories = [
     language: "TypeScript",
     stars: 365096,
     purpose: "roadmap.sh 的社区驱动互动学习路线，覆盖前端、后端、DevOps、数据、AI、安全和多种语言，并为节点提供文章与测试题。",
-    example: "后端新人入职计划：从 Backend Beginner Roadmap 选取 HTTP、Git、数据库、API 与部署节点，拆成 8 周清单；每周用配套问题自测并交付一个递进式服务。",
+    example: "roadmap.sh 是该仓库对应的真实 Web 产品，提供互动式岗位和技能路线、项目题目、最佳实践、测试题及注册用户学习进度。",
     risk: "路线图是知识地图而非统一课程，覆盖面容易制造完成焦虑；学习顺序仍要按岗位和已有基础裁剪。",
   },
   {
@@ -218,7 +218,7 @@ const mostStarredRepositories = [
     language: "文档",
     stars: 359447,
     purpose: "面向大型科技公司软件工程面试的多月计算机科学学习计划，覆盖数据结构、算法、复杂度、网络、系统设计与求职准备。",
-    example: "转岗者制定 16 周面试计划：每天学习一个主题并实现数组、树、图和排序；每周完成两次限时题，最后四周进行系统设计和模拟面试并记录错题。",
+    example: "未找到可公开核实的第三方工具或网站以该仓库作为产品依赖；项目本身是多语言的软件工程面试自学计划。",
     risk: "原作者的高强度路径不是普适工时标准；它侧重通用软件工程面试，不等同于前端或全栈岗位能力模型。",
   },
   {
@@ -229,10 +229,32 @@ const mostStarredRepositories = [
     language: "Python",
     stars: 315378,
     purpose: "按 AI、Web、数据库、数据分析、测试、DevOps、媒体和安全等类别整理 Python 框架、库、工具与资源。",
-    example: "比赛成绩 API 原型：从清单选择 FastAPI 类 Web 框架、数据校验库、ORM、测试和日志工具，做出成绩导入、选手查询和年龄组排名接口，再记录各库取舍。",
+    example: "awesome-python.com 是该仓库的真实网站，支持按 AI、Web、数据库、测试、媒体和安全等类别浏览 Python 框架、库和工具。",
     risk: "这是有主观筛选标准的目录；热门库也可能许可证不合适、维护停滞或与目标 Python 版本不兼容。",
   },
 ];
+
+const verifiedCases = {
+  "public-apis/public-apis": { type: "官方项目", url: "https://github.com/public-apis/public-apis", verified: true },
+  "harry0703/MoneyPrinterTurbo": { type: "官方产品与 Gallery", url: "https://github.com/harry0703/MoneyPrinterTurbo", verified: true },
+  "cathrynlavery/diagram-design": { type: "官方 Live Gallery", url: "https://cathrynlavery.github.io/diagram-design/", verified: true },
+  "AprilNEA/OpenLogi": { type: "官方桌面应用", url: "https://github.com/AprilNEA/OpenLogi", verified: true },
+  "cordiverse/cordis": { type: "真实下游产品", url: "https://deepseek.com/harness/en/", verified: true },
+  "volcengine/OpenViking": { type: "官方产品集成", url: "https://openviking.ai/integrations", verified: true },
+  "unslothai/unsloth": { type: "官方桌面应用", url: "https://github.com/unslothai/unsloth", verified: true },
+  "cactus-compute/needle": { type: "官方引擎集成", url: "https://docs.cactuscompute.com/", verified: true },
+  "semantica-agi/semantica": { type: "官方产品", url: "https://github.com/semantica-agi/semantica", verified: true },
+  "basecamp/omarchy": { type: "官方发行版", url: "https://omarchy.org/", verified: true },
+  "codecrafters-io/build-your-own-x": { type: "未找到公开案例", url: "https://github.com/codecrafters-io/build-your-own-x", verified: false },
+  "sindresorhus/awesome": { type: "官方网站", url: "https://awesome.re", verified: true },
+  "freeCodeCamp/freeCodeCamp": { type: "官方网站", url: "https://www.freecodecamp.org/", verified: true },
+  "EbookFoundation/free-programming-books": { type: "官方搜索 App", url: "https://ebookfoundation.github.io/free-programming-books-search/", verified: true },
+  "openclaw/openclaw": { type: "官方 Showcase", url: "https://docs.openclaw.ai/start/showcase", verified: true },
+  "donnemartin/system-design-primer": { type: "未找到公开案例", url: "https://github.com/donnemartin/system-design-primer", verified: false },
+  "nilbuild/developer-roadmap": { type: "官方网站", url: "https://roadmap.sh/", verified: true },
+  "jwasham/coding-interview-university": { type: "未找到公开案例", url: "https://github.com/jwasham/coding-interview-university", verified: false },
+  "vinta/awesome-python": { type: "官方网站", url: "https://awesome-python.com/", verified: true },
+};
 
 const tableBody = document.querySelector("#repo-table-body");
 const searchInput = document.querySelector("#search");
@@ -271,6 +293,14 @@ function getActiveRepositories() {
   return activeBoard === "weekly" ? trendingRepositories : mostStarredRepositories;
 }
 
+function getCaseInfo(repo) {
+  return verifiedCases[`${repo.owner}/${repo.name}`] ?? {
+    type: "未找到公开案例",
+    url: repo.url,
+    verified: false,
+  };
+}
+
 function getVisibleRepositories() {
   const query = searchInput.value.trim().toLocaleLowerCase("zh-CN");
   const selectedLanguage = languageFilter.value;
@@ -279,7 +309,8 @@ function getVisibleRepositories() {
     .filter((repo) => selectedLanguage === "all" || repo.language === selectedLanguage)
     .filter((repo) => {
       if (!query) return true;
-      return [repo.owner, repo.name, repo.language, repo.purpose, repo.example, repo.risk]
+      const caseInfo = getCaseInfo(repo);
+      return [repo.owner, repo.name, repo.language, repo.purpose, repo.example, caseInfo.type, repo.risk]
         .join(" ")
         .toLocaleLowerCase("zh-CN")
         .includes(query);
@@ -296,6 +327,25 @@ function makeCell(className, text) {
   paragraph.className = `cell-copy ${className}`.trim();
   paragraph.textContent = text;
   cell.append(paragraph);
+  return cell;
+}
+
+function makeCaseCell(repo) {
+  const caseInfo = getCaseInfo(repo);
+  const cell = document.createElement("td");
+  const badge = document.createElement("span");
+  badge.className = `case-badge${caseInfo.verified ? "" : " unverified"}`;
+  badge.textContent = caseInfo.type;
+  const paragraph = document.createElement("p");
+  paragraph.className = "cell-copy example-copy";
+  paragraph.textContent = repo.example;
+  const source = document.createElement("a");
+  source.className = "case-source";
+  source.href = caseInfo.url;
+  source.target = "_blank";
+  source.rel = "noreferrer";
+  source.textContent = "查看来源 ↗";
+  cell.append(badge, paragraph, source);
   return cell;
 }
 
@@ -338,7 +388,7 @@ function renderTable() {
       languageCell,
       starsCell,
       makeCell("", repo.purpose),
-      makeCell("example-copy", repo.example),
+      makeCaseCell(repo),
       makeCell("risk-copy", repo.risk),
     ];
     if (activeBoard === "weekly") {
