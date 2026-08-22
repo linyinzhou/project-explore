@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="GitHub Weekly Trending 前十项目：用途、Star 增长、具体应用与风险。"
+    />
+    <title>project - explore</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">GitHub Weekly Trending</p>
+          <h1>project - <span>explore</span></h1>
+          <p class="hero-copy">
+            探索本周增长最快的 10 个开源项目。按 GitHub Weekly Trending 页面显示的新增 Star
+            重新排序，并逐项核实项目用途、具体应用和采用风险。
+          </p>
+        </div>
+        <aside class="method-card" aria-label="统计说明">
+          <p class="method-label">数据快照</p>
+          <p class="method-date">2026-08-23</p>
+          <p>不限语言 · 最近一周</p>
+          <a href="https://github.com/trending?since=weekly" target="_blank" rel="noreferrer">
+            查看 GitHub 原始榜单 ↗
+          </a>
+        </aside>
+      </header>
+
+      <section class="metrics" aria-label="本周概览">
+        <article>
+          <span>增长冠军</span>
+          <strong>public-apis</strong>
+          <small>+10,990 Stars</small>
+        </article>
+        <article>
+          <span>前十合计增长</span>
+          <strong>51,910</strong>
+          <small>GitHub Trending candidates</small>
+        </article>
+        <article>
+          <span>AI / Agent 相关</span>
+          <strong>6 / 10</strong>
+          <small>本周主题集中度较高</small>
+        </article>
+      </section>
+
+      <section class="notice" aria-label="统计边界">
+        <strong>统计边界</strong>
+        <p>
+          GitHub 没有公开全站仓库的七日 Star 增量排行榜。本页排序范围是 GitHub Weekly Trending
+          候选集，不代表全 GitHub 的绝对前十；具体应用是基于官方 README 的落地方案，未标注为官方案例的内容均不是客户案例。
+        </p>
+      </section>
+
+      <section class="radar-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="section-kicker">Repository table</p>
+            <h2>Weekly Trending Top 10</h2>
+          </div>
+          <div class="controls">
+            <label>
+              <span class="sr-only">搜索项目</span>
+              <input id="search" type="search" placeholder="搜索项目、用途或应用…" />
+            </label>
+            <label>
+              <span class="sr-only">筛选语言</span>
+              <select id="language-filter">
+                <option value="all">全部语言</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">项目</th>
+                <th scope="col">语言</th>
+                <th scope="col">
+                  <button class="sort-button" data-sort="stars" type="button">
+                    当前 Star <span aria-hidden="true">↕</span>
+                  </button>
+                </th>
+                <th scope="col" aria-sort="descending">
+                  <button class="sort-button active" data-sort="weekly" type="button">
+                    本周新增 <span aria-hidden="true">↓</span>
+                  </button>
+                </th>
+                <th scope="col">项目用途</th>
+                <th scope="col">具体应用例子</th>
+                <th scope="col">主要风险</th>
+              </tr>
+            </thead>
+            <tbody id="repo-table-body"></tbody>
+          </table>
+          <p id="empty-state" class="empty-state" hidden>没有符合当前条件的项目。</p>
+        </div>
+      </section>
+
+      <footer>
+        <p>Popularity is a signal, not a verdict.</p>
+        <p>Star 是关注度指标，不是质量、安全性或生产成熟度证明。</p>
+      </footer>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
