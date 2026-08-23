@@ -1,6 +1,14 @@
 import unittest
+from unittest.mock import patch
 
-from github_radar import Repository, enrich, infer_example, parse_trending, render_markdown
+from github_radar import (
+    Repository,
+    enrich,
+    fetch_top_repositories,
+    infer_example,
+    parse_trending,
+    render_markdown,
+)
 
 
 TRENDING_HTML = """
@@ -62,6 +70,16 @@ class ReportTests(unittest.TestCase):
 
         self.assertIn("not every repository on GitHub", report)
         self.assertIn("not verified adoption cases", report)
+
+
+class MostStarredQueryTests(unittest.TestCase):
+    @patch("github_radar.request_json", return_value={"items": []})
+    def test_global_ranking_uses_a_bounded_candidate_set(self, request_json):
+        fetch_top_repositories(None, 10, None)
+
+        requested_url = request_json.call_args.args[0]
+        self.assertIn("stars%3A%3E100000", requested_url)
+        self.assertIn("sort=stars", requested_url)
 
 
 if __name__ == "__main__":

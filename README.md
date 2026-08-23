@@ -57,6 +57,12 @@ python -m http.server 8765
 
 Open `http://127.0.0.1:8765/`. The table supports text search, language filtering, and sorting by current or weekly Stars.
 
+## Weekly automation
+
+GitHub Actions runs `scripts/refresh_dashboard.py` every Saturday at 08:00 Asia/Shanghai time. The workflow refreshes both rankings, writes a dated report, runs the test suite, and commits changed data to `main`; that push triggers the Pages deployment workflow.
+
+Ranking data and repository descriptions are refreshed automatically. Real application cases come only from the script's curated, sourced registry. A newly ranked repository without a registry entry is labelled as having no publicly verified case instead of receiving an inferred scenario.
+
 ## Tests
 
 ```powershell

@@ -155,7 +155,9 @@ def parse_trending(html_text: str, period: str) -> list[Repository]:
 
 
 def fetch_top_repositories(language: str | None, limit: int, token: str | None) -> list[Repository]:
-    qualifiers = ["stars:>0", "is:public", "archived:false"]
+    # GitHub Search caps broad result sets. A high threshold keeps the global
+    # ranking candidate set well below that cap so sorting by Stars is reliable.
+    qualifiers = ["stars:>100000", "is:public", "archived:false"]
     if language:
         qualifiers.append(f'language:"{language}"')
     query = urlencode(
