@@ -5,6 +5,7 @@ from scripts.refresh_dashboard import (
     DATA_END,
     DATA_START,
     case_for,
+    purpose_for,
     render_data_block,
     replace_data_block,
 )
@@ -24,6 +25,19 @@ def repository(full_name: str, growth: int | None = None) -> Repository:
 
 
 class RefreshDashboardTests(unittest.TestCase):
+    def test_known_repository_uses_reviewed_chinese_purpose(self):
+        purpose = purpose_for(repository("public-apis/public-apis"))
+
+        self.assertIn("公共 API 分类目录", purpose)
+        self.assertIn("配额", purpose)
+        self.assertNotIn("A factual repository description", purpose)
+
+    def test_unknown_repository_is_marked_pending_instead_of_machine_translated(self):
+        purpose = purpose_for(repository("example/new-project"))
+
+        self.assertIn("尚未完成人工中文用途核实", purpose)
+        self.assertIn("不会", purpose)
+
     def test_unknown_repository_is_not_given_an_invented_case(self):
         case = case_for(repository("example/new-project"))
 
@@ -41,6 +55,7 @@ class RefreshDashboardTests(unittest.TestCase):
 
         self.assertIn('const dashboardGeneratedAt = "2026-08-29";', updated)
         self.assertIn('"weekly": 42', updated)
+        self.assertIn("尚未完成人工中文用途核实", updated)
         self.assertNotIn("old data", updated)
         self.assertTrue(updated.startswith("before\n"))
         self.assertTrue(updated.endswith("after\n"))

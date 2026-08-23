@@ -7,13 +7,13 @@ GitHub Project Radar is a dependency-free Python CLI that creates two repository
 1. repositories with the highest current Star count, using the official GitHub Search API;
 2. repositories with the largest daily, weekly, or monthly Star gain among the candidates shown on GitHub Trending.
 
-Each result includes the repository description as its purpose and a clearly labelled, metadata-based application suggestion.
+Each result includes a reviewed, detailed Chinese purpose explanation and a clearly labelled, sourced application or product case.
 
 ## Important methodology note
 
 GitHub does not provide an official API for ranking every public repository by Star growth over a time window. The growth ranking therefore sorts the repositories selected by GitHub Trending by the gain displayed on that page. It must not be described as an exhaustive, GitHub-wide growth ranking.
 
-Application suggestions are inferred from names, descriptions, topics, and languages. They are ideas, not verified customer or production case studies.
+Purpose explanations and application cases are curated from public project documentation. Unknown repositories are explicitly marked as pending review instead of being machine-translated or assigned an invented case.
 
 ## Requirements
 
@@ -61,7 +61,7 @@ Open `http://127.0.0.1:8765/`. The table supports text search, language filterin
 
 GitHub Actions runs `scripts/refresh_dashboard.py` every Saturday at 08:00 Asia/Shanghai time. The workflow refreshes both rankings, writes a dated report, runs the test suite, and commits changed data to `main`; that push triggers the Pages deployment workflow.
 
-Ranking data and repository descriptions are refreshed automatically. Real application cases come only from the script's curated, sourced registry. A newly ranked repository without a registry entry is labelled as having no publicly verified case instead of receiving an inferred scenario.
+Ranking data is refreshed automatically. Detailed Chinese purpose explanations and real application cases come only from the script's curated, sourced registries. A newly ranked repository without an entry is labelled as pending Chinese review and as having no publicly verified case instead of receiving machine-generated claims.
 
 ## Tests
 
