@@ -8,7 +8,7 @@ on:
       - "scripts/refresh_dashboard.py"
       - "github_radar.py"
   schedule:
-    - cron: "0 8 * * 6"
+    - cron: "17 8 * * 6"
       timezone: "Asia/Shanghai"
   workflow_dispatch:
 
