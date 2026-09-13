@@ -13,7 +13,7 @@ Each result includes a reviewed, detailed Chinese purpose explanation and a clea
 
 GitHub does not provide an official API for ranking every public repository by Star growth over a time window. The growth ranking therefore sorts the repositories selected by GitHub Trending by the gain displayed on that page. It must not be described as an exhaustive, GitHub-wide growth ranking.
 
-Purpose explanations and application cases are curated from public project documentation. Unknown repositories are explicitly marked as pending review instead of being machine-translated or assigned an invented case.
+Purpose explanations and application cases are based on public project documentation. Reviewed descriptions in the curated registry take priority. For a newly ranked repository, the weekly workflow reads its README, asks GitHub Copilot CLI for a factual Chinese summary, validates the response, and commits it to `data/purpose_zh.json`. Application cases remain separately curated and sourced; the workflow never invents one.
 
 ## Requirements
 
@@ -59,9 +59,9 @@ Open `http://127.0.0.1:8765/`. The table supports text search, language filterin
 
 ## Weekly automation
 
-GitHub Actions runs `scripts/refresh_dashboard.py` every Saturday at 08:00 Asia/Shanghai time. The workflow refreshes both rankings, writes a dated report, runs the test suite, and commits changed data to `main`; that push triggers the Pages deployment workflow.
+GitHub Actions runs `scripts/refresh_dashboard.py` every Saturday at 08:17 Asia/Shanghai time. The workflow refreshes both rankings, writes a dated report, runs the test suite, and commits changed data to `main`; the follow-up Pages workflow deploys that refreshed commit.
 
-Ranking data is refreshed automatically. Detailed Chinese purpose explanations and real application cases come only from the script's curated, sourced registries. A newly ranked repository without an entry is labelled as pending Chinese review and as having no publicly verified case instead of receiving machine-generated claims.
+Ranking data and Chinese purpose summaries are refreshed automatically. Only repositories missing from both the reviewed registry and the committed cache are sent to Copilot, so existing summaries are not regenerated every week. The workflow uses its built-in `GITHUB_TOKEN`; this requires Copilot access for the repository owner and consumes Copilot requests. If README retrieval, CLI installation, entitlement, or response validation fails, ranking refresh still completes and the repository receives an explicit pending label.
 
 ## Tests
 
