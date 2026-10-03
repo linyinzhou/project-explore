@@ -1,125 +1,125 @@
 // GENERATED DATA START
-const dashboardGeneratedAt = "2026-09-26";
+const dashboardGeneratedAt = "2026-10-03";
 const trendingRepositories = [
   {
     "rank": 1,
-    "owner": "cloudflare",
-    "name": "security-audit-skill",
-    "url": "https://github.com/cloudflare/security-audit-skill",
-    "language": "JavaScript",
-    "stars": 21699,
-    "purpose": "这是一个面向编码代理的安全审计技能，通过侦察、按覆盖范围狩猎、候选验证、结构化记录、独立核验和报告生成等阶段，帮助对单个代码库开展有流程约束的审计，并维护覆盖台账与审计发现。它适用于希望让编码代理系统化检查代码并生成可追溯报告的场景；其定位是单仓库审计的起点，而不是 Cloudflare 后来发展出的多阶段、全平台漏洞发现系统。",
+    "owner": "debpalash",
+    "name": "VoiceStudio",
+    "url": "https://github.com/debpalash/VoiceStudio",
+    "language": "Python",
+    "stars": 52024,
+    "purpose": "VoiceStudio 是一款开源语音与音视频制作应用，提供语音克隆与设计、视频配音、听写、转录、有声书制作和批量任务，并支持本地模型及本地 API/MCP 接入。主要工作流可在本机运行，远程服务为可选；README 还说明 Intel Mac 仅支持应用界面，需连接远程后端才能执行相关工作。",
     "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 9547
+    "weekly": 16475
   },
   {
     "rank": 2,
-    "owner": "stablyai",
-    "name": "orca",
-    "url": "https://github.com/stablyai/orca",
-    "language": "TypeScript",
-    "stars": 78446,
-    "purpose": "Orca 是面向高并发构建工作的 AI 编排桌面应用，可让 Codex、ClaudeCode、OpenCode 或 Pi 等编码代理并行运行在相互隔离的 Git worktree 中，并集中跟踪、比较和合并结果。它还提供移动端伴侣、可持久化的分屏终端、浏览器 Design Mode、原生 GitHub 与 Linear 工作流，以及通过 SSH 在远程机器上运行代理等能力；README 标明桌面应用支持 macOS、Windows 和 Linux。",
-    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
-    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 6537
-  },
-  {
-    "rank": 3,
-    "owner": "affaan-m",
-    "name": "ECC",
-    "url": "https://github.com/affaan-m/ECC",
-    "language": "JavaScript",
-    "stars": 267575,
-    "purpose": "一套面向 Claude Code 等 AI 编程代理的工程化配置与工作流集合，包含技能、子代理、规则、钩子和命令。它把规划、测试驱动开发、代码审查、安全扫描、构建修复、上下文管理和长期记忆等做法整理成可复用模块，适合为团队建立一致的代理辅助开发流程；它不是独立的终端应用，效果仍取决于所用代理和项目配置。",
-    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
-    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 6037
-  },
-  {
-    "rank": 4,
-    "owner": "alibaba",
-    "name": "open-code-review",
-    "url": "https://github.com/alibaba/open-code-review",
-    "language": "Go",
-    "stars": 41398,
-    "purpose": "OpenCodeReview 是一个由大语言模型驱动的代码审查命令行工具，读取 Git diff 或完整文件，将代码交给可配置的模型代理分析，并生成带精确行号的结构化审查意见；代理还可以读取完整文件、搜索代码库和检查其他变更文件，以支持更深入的审查。它适合代码变更审查，也可通过 `ocr scan` 审计没有明显 diff 的完整文件或目录；README 明确指出其基准测试以较低召回率为代价偏重精确率和减少噪声。",
-    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
-    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 5030
-  },
-  {
-    "rank": 5,
     "owner": "vectorize-io",
     "name": "hindsight",
     "url": "https://github.com/vectorize-io/hindsight",
     "language": "Python",
-    "stars": 30049,
+    "stars": 44773,
     "purpose": "Hindsight 是为 AI 代理设计的记忆系统，目标是让代理能够随着交互积累和运用长期记忆，而不只检索对话历史；README 介绍了 retain、recall、reflect 等操作，并提供服务端、客户端及嵌入式等接入方式。它适合希望为代理加入长期记忆能力的开发者；部署时需要选择其支持的模型提供方，示例配置使用模型 API 密钥，README 片段未说明其他明确的功能限制。",
     "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 4869
+    "weekly": 16183
   },
   {
-    "rank": 6,
-    "owner": "Tencent",
-    "name": "WeKnora",
-    "url": "https://github.com/Tencent/WeKnora",
-    "language": "Go",
-    "stars": 30139,
-    "purpose": "WeKnora 是一个开源、面向企业级文档理解和语义检索的 LLM 知识框架，结合 RAG 快速问答、可调用检索与工具的 ReAct Agent，以及能把原始文档整理成可维护互联 Markdown 知识库的 Wiki Mode。它支持多源导入、长期记忆、知识块编辑与版本回滚、多工作区 RBAC、嵌入式网站组件、API 密钥、多个 LLM/向量数据库/存储后端和本地或私有云部署，适合将分散文档转化为可查询、可推理且持续演进的知识资产；README 说明自动同步目前覆盖飞书、GitLab、腾讯 IMA、Notion 和语雀等来源，更多数据源仍在增加。",
-    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
-    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 3189
-  },
-  {
-    "rank": 7,
-    "owner": "addyosmani",
-    "name": "agent-skills",
-    "url": "https://github.com/addyosmani/agent-skills",
-    "language": "JavaScript",
-    "stars": 99116,
-    "purpose": "Agent Skills 提供面向 AI 编码 Agent 的生产级工程技能，将定义、规划、构建、测试、约束、审查、性能审计、代码简化和发布等开发阶段封装为可通过斜杠命令触发的工作流，并支持按需自动激活相关技能。它适合把资深工程实践和质量门槛一致地应用到 Agent 开发过程中，可用 `npx skills` 安装全部或单个技能；README 提醒单独安装某个技能时不会复制仓库级 `references/` 目录，因此依赖共享检查清单的补充路径可能不可用。",
-    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
-    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 2911
-  },
-  {
-    "rank": 8,
-    "owner": "anthropics",
-    "name": "financial-services",
-    "url": "https://github.com/anthropics/financial-services",
-    "language": "Python",
-    "stars": 37576,
-    "purpose": "这是面向金融服务工作流的参考代理、技能和数据连接器集合，覆盖投行、研究、私募股权、财富管理等方向，包含建模、研究、对账、估值审核和客户尽调等工作流，并可作为 Cowork 插件或 Claude Managed Agent 模板使用。它面向需要定制金融工作流辅助工具的团队；代理生成的是供专业人员审核的草稿，不提供投资、法律、税务或会计建议，也不会作出投资建议、执行交易、批准开户或直接记账。",
-    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
-    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 2623
-  },
-  {
-    "rank": 9,
+    "rank": 3,
     "owner": "paperclipai",
     "name": "paperclip",
     "url": "https://github.com/paperclipai/paperclip",
     "language": "TypeScript",
-    "stars": 85277,
+    "stars": 96388,
     "purpose": "Paperclip 是由 Node.js 服务端和 React 界面组成的开源 AI 代理编排工具，用于围绕业务目标组织多个代理、分配任务，并在一个仪表板中管理组织关系、预算、审批、工作进度和成本。它面向希望协调不同代理共同工作的团队；代理需要能够接收心跳信号才能接入，项目负责管理和编排代理，而不是提供这些代理本身。",
     "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 2616
+    "weekly": 12825
+  },
+  {
+    "rank": 4,
+    "owner": "rohitg00",
+    "name": "ai-engineering-from-scratch",
+    "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "language": "Python",
+    "stars": 62732,
+    "purpose": "这是面向 AI 工程学习的开源课程，涵盖从数学、机器学习基础到 LLM、智能体和 MCP 等主题，包含 20 个阶段、523 节课程，并以 Python、TypeScript、Rust 和 Julia 的练习及可复用产物引导学习者动手构建。它适合希望系统学习并实践 AI 工程的读者；README 说明英文版是规范源，课程页面的机器翻译版本位于 translations 分支。",
+    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
+    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
+    "weekly": 5600
+  },
+  {
+    "rank": 5,
+    "owner": "pbakaus",
+    "name": "impeccable",
+    "url": "https://github.com/pbakaus/impeccable",
+    "language": "JavaScript",
+    "stars": 74446,
+    "purpose": "Impeccable 是为 AI 编程代理提供的前端设计指导工具，包含一个技能、24 个设计命令，以及用于设计审查、无障碍、性能和响应式等方面的检查规则，可辅助规划、迭代和完善界面。CLI 与浏览器扩展中的 61 条确定性检测规则无需 LLM 或 API 密钥，但 README 将部分评审检查列为仅由 LLM 执行。",
+    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
+    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
+    "weekly": 3124
+  },
+  {
+    "rank": 6,
+    "owner": "heygen-com",
+    "name": "hyperframes",
+    "url": "https://github.com/heygen-com/hyperframes",
+    "language": "TypeScript",
+    "stars": 55974,
+    "purpose": "一个面向 AI 代理的开源 HTML 视频渲染框架，让代理使用熟悉的 HTML、CSS 和 JavaScript 创建可编辑的动态画面。它通过 Puppeteer、Chrome 与 FFmpeg 逐帧确定性渲染，支持 GSAP、Lottie、Three.js 等 Web 动画技术，并提供预览和命令行导出；它主要解决代码化视频合成，不会自动保证素材版权或内容事实正确。",
+    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
+    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
+    "weekly": 2661
+  },
+  {
+    "rank": 7,
+    "owner": "harry0703",
+    "name": "MoneyPrinterTurbo",
+    "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+    "language": "Python",
+    "stars": 128119,
+    "purpose": "一套开源的 AI 短视频自动生产工具。输入主题或关键词后，它可调用大模型生成文案和素材检索词，从公开视频素材站或本地素材匹配画面，再生成配音、字幕和背景音乐并合成为横屏或竖屏视频。项目提供 WebUI、REST API、命令行和 Docker 等使用方式，适合搭建需要人工复核事实与素材版权的批量视频工作流。",
+    "example": "官方 WebUI、API 与 CLI 已实际提供短视频生成，README Gallery 展示了多条由该工具生成的成片。",
+    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
+    "weekly": 2533
+  },
+  {
+    "rank": 8,
+    "owner": "google",
+    "name": "ax",
+    "url": "https://github.com/google/ax",
+    "language": "Go",
+    "stars": 12933,
+    "purpose": "AX 是一个声明式智能体任务编排系统，使用 Task、Workspace 和 Model 等资源描述任务、运行环境与模型配置，并提供沙箱执行、仓库和工具预配置、任务监控、暂停恢复及调试访问，面向在集群中管理智能体工作负载。它依赖已部署并可访问的 Agent Substrate 与 Kubernetes；README 警告项目仍在密集开发，核心概念和协议可能变化，稳定发布前也可能出现重大不兼容变更。",
+    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
+    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
+    "weekly": 1783
+  },
+  {
+    "rank": 9,
+    "owner": "TencentCloud",
+    "name": "Octop",
+    "url": "https://github.com/TencentCloud/Octop",
+    "language": "Python",
+    "stars": 6424,
+    "purpose": "Octop 是可自托管的开源 AI 助手，提供多用户、多智能体协作，并可通过 Web 控制台、命令行、即时通信平台及 HTTP/SSE/WebSocket 交互；其功能还包括文档知识库、连接器与插件、记忆、IDE 工作流集成和远程桌面。它面向希望自行部署并扩展助手能力的个人或团队；README 标明多专家协作调度功能 AgentTeams 仍处于 Beta 阶段。",
+    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
+    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
+    "weekly": 1425
   },
   {
     "rank": 10,
-    "owner": "bojieli",
-    "name": "ai-agent-book",
-    "url": "https://github.com/bojieli/ai-agent-book",
-    "language": "Python",
-    "stars": 51037,
-    "purpose": "《深入理解 AI Agent：设计原理与工程实践》是一本介绍 AI Agent 原理与工程实践的开源书籍，以“Agent = LLM + 上下文 + 工具”为主线，包含 10 章正文和 109 个配套实验，并提供在线阅读及多语言版本。它适合希望系统学习代理设计并动手复现实验的读者；仓库书稿已更新至 2.0 版，README 提醒旧版 PDF 可能不含最新修订和内容调整，应以最新版为准。",
+    "owner": "pablostanley",
+    "name": "yoinks",
+    "url": "https://github.com/pablostanley/yoinks",
+    "language": "TypeScript",
+    "stars": 3590,
+    "purpose": "yoinks 是一款终端视频下载工具，用户粘贴视频链接后可选择分辨率或仅提取 MP3，并可从 YouTube、X/Twitter、Instagram、Threads、TikTok 等众多网站下载，文件默认保存到 ~/Downloads。它适合交互式下载和个人存档；README 指出下载内容可能违反平台服务条款，且播放列表或包含多个视频的线程下载尚未列入已完成功能。",
     "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 2485
+    "weekly": 1415
   }
 ];
 const mostStarredRepositories = [
@@ -129,7 +129,7 @@ const mostStarredRepositories = [
     "name": "build-your-own-x",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "language": "Markdown",
-    "stars": 549631,
+    "stars": 551250,
     "purpose": "一个按技术类别整理的教程索引，核心学习方法是从零重建数据库、Git、Docker、Web 服务器、神经网络等常见系统。它帮助开发者通过实现简化版本理解底层原理和设计取舍，本身不是框架、软件包或可部署产品，教程质量与维护状态需逐项判断。",
     "example": "未找到可公开核实的第三方网站或 App 声明由该仓库构建；它本身是教程索引。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -140,7 +140,7 @@ const mostStarredRepositories = [
     "name": "awesome",
     "url": "https://github.com/sindresorhus/awesome",
     "language": "未注明",
-    "stars": 510557,
+    "stars": 513802,
     "purpose": "Awesome Lists 生态的总目录和质量规范入口，汇集由社区维护的技术、科学、文化与兴趣主题资源清单。它适合在陌生领域快速找到经过初步筛选的工具、资料和项目，但收录代表维护者的主观选择，不构成安全性、质量或持续维护的保证。",
     "example": "awesome.re 是该项目的官方入口网站，提供跨主题 Awesome Lists 导航。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -151,7 +151,7 @@ const mostStarredRepositories = [
     "name": "public-apis",
     "url": "https://github.com/public-apis/public-apis",
     "language": "Python",
-    "stars": 483297,
+    "stars": 485601,
     "purpose": "一个由社区维护的公共 API 分类目录，而不是代替各服务商转发请求的统一 API 网关。它按动物、图书、天气、金融等领域收录接口，并标注认证方式、HTTPS 和 CORS 支持情况，方便开发者为原型或正式产品寻找可接入的数据与功能；配额、稳定性和商用条款仍需到对应服务商核实。",
     "example": "Public APIs 仓库本身是实际运行的公共 API 目录；未找到可归因到该目录的具名第三方产品。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -162,7 +162,7 @@ const mostStarredRepositories = [
     "name": "freeCodeCamp",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "language": "TypeScript",
-    "stars": 456178,
+    "stars": 456661,
     "purpose": "非营利编程教育平台 freeCodeCamp.org 的开源代码库与课程内容。平台通过交互式练习、项目和认证路径教授数学、编程、计算机科学、Web 开发、数据分析与机器学习等主题；仓库也供贡献者修订课程、翻译内容和开发平台功能。",
     "example": "freeCodeCamp.org 由该代码库实际运行，提供互动编码挑战、课程和认证项目。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -173,7 +173,7 @@ const mostStarredRepositories = [
     "name": "free-programming-books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "language": "Python",
-    "stars": 397712,
+    "stars": 398353,
     "purpose": "由社区维护的免费编程学习资源目录，收录多语言的书籍、课程、播客、交互式教程、习题集和备忘单。它还通过官方搜索 Web App 提供检索入口；项目只负责索引链接，不托管大部分内容，也不自动保证外部资源长期可用或版权状态不变。",
     "example": "Free Programming Books Search 是该仓库发布的搜索 Web App，可检索多语言免费编程资源。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -184,7 +184,7 @@ const mostStarredRepositories = [
     "name": "openclaw",
     "url": "https://github.com/openclaw/openclaw",
     "language": "TypeScript",
-    "stars": 390530,
+    "stars": 391196,
     "purpose": "一个可由个人自行托管的 AI 助手与消息网关，可把模型、工具和自动化能力接入不同操作系统及聊天渠道。它适合构建能查询个人数据、调用外部服务或控制设备的助手，官方 Showcase 已展示公共交通查询、Oura 健康助手和 Bambu 3D 打印机控制等项目。由于会接触账户凭据和本地工具，部署时必须严格限制权限与网络暴露范围。",
     "example": "官方 Showcase 收录 Vienna 公共交通查询、Oura 健康助手、Bambu 3D 打印机控制等具名社区项目。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -195,7 +195,7 @@ const mostStarredRepositories = [
     "name": "system-design-primer",
     "url": "https://github.com/donnemartin/system-design-primer",
     "language": "Python",
-    "stars": 371830,
+    "stars": 372979,
     "purpose": "面向软件工程师的系统设计学习与面试准备资料库。它系统整理可扩展性、缓存、数据库、消息队列、一致性和高可用等概念，配有架构图、案例题、答案思路及 Anki 卡片，适合建立知识框架和模拟面试；内容是学习材料，不是可直接复用的生产架构模板。",
     "example": "未找到可公开核实的网站或 App 声明以该仓库作为产品依赖；它是系统设计学习资源。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -206,7 +206,7 @@ const mostStarredRepositories = [
     "name": "developer-roadmap",
     "url": "https://github.com/nilbuild/developer-roadmap",
     "language": "TypeScript",
-    "stars": 368161,
+    "stars": 368749,
     "purpose": "roadmap.sh 的开源内容和代码仓库，为前端、后端、DevOps、AI、数据等岗位提供可交互的技能路线图、指南、项目题和测试题。用户可用它规划学习顺序、记录进度和查漏补缺；路线图是社区建议，不代表所有岗位或公司的统一招聘标准。",
     "example": "roadmap.sh 是该仓库对应的真实 Web 产品，提供互动路线、项目题目、测试题和学习进度。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -217,7 +217,7 @@ const mostStarredRepositories = [
     "name": "coding-interview-university",
     "url": "https://github.com/jwasham/coding-interview-university",
     "language": "未注明",
-    "stars": 361873,
+    "stars": 362263,
     "purpose": "一套以进入大型软件公司为目标的长期计算机科学和编码面试自学计划。它按阶段组织数据结构、算法、操作系统、网络、数据库和系统设计等资料，并附练习与复习建议；它是一份高强度课程清单，不是大学学历替代品，也不能保证面试结果。",
     "example": "未找到可公开核实的第三方工具或网站以该仓库作为产品依赖；项目本身是面试自学计划。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -228,7 +228,7 @@ const mostStarredRepositories = [
     "name": "awesome-python",
     "url": "https://github.com/vinta/awesome-python",
     "language": "Python",
-    "stars": 323054,
+    "stars": 324782,
     "purpose": "按用途分类整理的 Python 框架、库、工具和学习资源清单，覆盖 Web、数据、机器学习、测试、运维、安全与桌面开发等领域。开发者可通过仓库或 awesome-python.com 快速比较候选工具，但进入清单不等于通过安全审计或生产验证，仍需检查许可证和维护状态。",
     "example": "awesome-python.com 是该仓库的真实网站，可按类别浏览 Python 框架、库和工具。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -253,6 +253,11 @@ const verifiedCases = {
   "freeCodeCamp/freeCodeCamp": {
     "type": "官方网站",
     "url": "https://www.freecodecamp.org/",
+    "verified": true
+  },
+  "harry0703/MoneyPrinterTurbo": {
+    "type": "官方产品与 Gallery",
+    "url": "https://github.com/harry0703/MoneyPrinterTurbo",
     "verified": true
   },
   "jwasham/coding-interview-university": {
