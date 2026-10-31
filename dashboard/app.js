@@ -1,125 +1,125 @@
 // GENERATED DATA START
-const dashboardGeneratedAt = "2026-10-24";
+const dashboardGeneratedAt = "2026-10-31";
 const trendingRepositories = [
   {
     "rank": 1,
-    "owner": "morluto",
-    "name": "rea",
-    "url": "https://github.com/morluto/rea",
-    "language": "TypeScript",
-    "stars": 373956,
-    "purpose": "REA 是一个面向 AI 智能体和命令行的逆向工程工具集，可检查原生二进制文件、JavaScript/Electron 应用、.NET 程序集和网站，并提供分析证据及结论的局限说明，供用户了解功能实现方式。分析在本地运行；原生分析可使用已安装的 Hopper、Ghidra 或 IDA，而静态 JavaScript 分析不需要原生分析引擎，Linux 上部分分析功能还要求 PATH 中有兼容 procps 的 `ps`。",
+    "owner": "cloudflare",
+    "name": "security-audit-skill",
+    "url": "https://github.com/cloudflare/security-audit-skill",
+    "language": "JavaScript",
+    "stars": 54338,
+    "purpose": "这是一个面向编码代理的安全审计技能，通过侦察、按覆盖范围狩猎、候选验证、结构化记录、独立核验和报告生成等阶段，帮助对单个代码库开展有流程约束的审计，并维护覆盖台账与审计发现。它适用于希望让编码代理系统化检查代码并生成可追溯报告的场景；其定位是单仓库审计的起点，而不是 Cloudflare 后来发展出的多阶段、全平台漏洞发现系统。",
     "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 88243
+    "weekly": 12838
   },
   {
     "rank": 2,
-    "owner": "debpalash",
-    "name": "VoiceStudio",
-    "url": "https://github.com/debpalash/VoiceStudio",
-    "language": "Python",
-    "stars": 83579,
-    "purpose": "VoiceStudio 是一款开源语音与音视频制作应用，提供语音克隆与设计、视频配音、听写、转录、有声书制作和批量任务，并支持本地模型及本地 API/MCP 接入。主要工作流可在本机运行，远程服务为可选；README 还说明 Intel Mac 仅支持应用界面，需连接远程后端才能执行相关工作。",
+    "owner": "pbakaus",
+    "name": "impeccable",
+    "url": "https://github.com/pbakaus/impeccable",
+    "language": "Rust",
+    "stars": 97311,
+    "purpose": "Impeccable 是为 AI 编程代理提供的前端设计指导工具，包含一个技能、24 个设计命令，以及用于设计审查、无障碍、性能和响应式等方面的检查规则，可辅助规划、迭代和完善界面。CLI 与浏览器扩展中的 61 条确定性检测规则无需 LLM 或 API 密钥，但 README 将部分评审检查列为仅由 LLM 执行。",
     "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 12526
+    "weekly": 11323
   },
   {
     "rank": 3,
-    "owner": "stablyai",
-    "name": "orca",
-    "url": "https://github.com/stablyai/orca",
-    "language": "TypeScript",
-    "stars": 104052,
-    "purpose": "Orca 是面向高并发构建工作的 AI 编排桌面应用，可让 Codex、ClaudeCode、OpenCode 或 Pi 等编码代理并行运行在相互隔离的 Git worktree 中，并集中跟踪、比较和合并结果。它还提供移动端伴侣、可持久化的分屏终端、浏览器 Design Mode、原生 GitHub 与 Linear 工作流，以及通过 SSH 在远程机器上运行代理等能力；README 标明桌面应用支持 macOS、Windows 和 Linux。",
+    "owner": "affaan-m",
+    "name": "ECC",
+    "url": "https://github.com/affaan-m/ECC",
+    "language": "JavaScript",
+    "stars": 293514,
+    "purpose": "一套面向 Claude Code 等 AI 编程代理的工程化配置与工作流集合，包含技能、子代理、规则、钩子和命令。它把规划、测试驱动开发、代码审查、安全扫描、构建修复、上下文管理和长期记忆等做法整理成可复用模块，适合为团队建立一致的代理辅助开发流程；它不是独立的终端应用，效果仍取决于所用代理和项目配置。",
     "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 9545
+    "weekly": 6506
   },
   {
     "rank": 4,
-    "owner": "anomalyco",
-    "name": "opencode",
-    "url": "https://github.com/anomalyco/opencode",
-    "language": "TypeScript",
-    "stars": 220690,
+    "owner": "TauricResearch",
+    "name": "TradingAgents",
+    "url": "https://github.com/TauricResearch/TradingAgents",
+    "language": "Python",
+    "stars": 118768,
     "purpose": "该项目本周首次进入榜单，但自动 README 中文摘要未能完成。请先查看项目 README；刷新任务不会用关键词猜测或伪造用途。",
     "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 6765
+    "weekly": 5490
   },
   {
     "rank": 5,
-    "owner": "heygen-com",
-    "name": "hyperframes",
-    "url": "https://github.com/heygen-com/hyperframes",
-    "language": "TypeScript",
-    "stars": 70906,
-    "purpose": "一个面向 AI 代理的开源 HTML 视频渲染框架，让代理使用熟悉的 HTML、CSS 和 JavaScript 创建可编辑的动态画面。它通过 Puppeteer、Chrome 与 FFmpeg 逐帧确定性渲染，支持 GSAP、Lottie、Three.js 等 Web 动画技术，并提供预览和命令行导出；它主要解决代码化视频合成，不会自动保证素材版权或内容事实正确。",
+    "owner": "obra",
+    "name": "superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "language": "Shell",
+    "stars": 309543,
+    "purpose": "Superpowers 是一套构建在可组合技能和初始指令之上的完整软件开发方法论，供编码 Agent 在开始写代码前澄清需求、分段确认设计、制定实施计划，并通过测试驱动开发、YAGNI、DRY 和子代理驱动流程完成任务。它适用于希望让 Agent 按规范、计划、增量实现、验证和审查等工程流程工作的开发者，并支持多种编码工具；README 明确指出安装方式取决于所使用的 harness，若使用多个 harness，需要分别安装。",
     "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 5553
+    "weekly": 5474
   },
   {
     "rank": 6,
-    "owner": "Comfy-Org",
-    "name": "ComfyUI",
-    "url": "https://github.com/Comfy-Org/ComfyUI",
-    "language": "Python",
-    "stars": 142400,
+    "owner": "Leonxlnx",
+    "name": "taste-skill",
+    "url": "https://github.com/Leonxlnx/taste-skill",
+    "language": "JavaScript",
+    "stars": 106457,
     "purpose": "该项目本周首次进入榜单，但自动 README 中文摘要未能完成。请先查看项目 README；刷新任务不会用关键词猜测或伪造用途。",
     "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 4531
+    "weekly": 4712
   },
   {
     "rank": 7,
-    "owner": "anthropics",
-    "name": "claude-plugins-official",
-    "url": "https://github.com/anthropics/claude-plugins-official",
+    "owner": "AgriciDaniel",
+    "name": "claude-seo",
+    "url": "https://github.com/AgriciDaniel/claude-seo",
     "language": "Python",
-    "stars": 44162,
-    "purpose": "这是 Claude Code 插件的精选目录，包含 Anthropic 内部开发维护的插件，以及合作伙伴和社区提交的第三方插件，可通过插件系统安装或浏览发现。插件可包含命令、智能体、技能和可选的 MCP 配置；README 提醒 Anthropic 不控制插件中附带的 MCP 服务器、文件或其他软件，也无法验证其行为，因此安装或使用前应确认可信度。",
-    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
-    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 4250
-  },
-  {
-    "rank": 8,
-    "owner": "NationalSecurityAgency",
-    "name": "ghidra",
-    "url": "https://github.com/NationalSecurityAgency/ghidra",
-    "language": "Java",
-    "stars": 93701,
-    "purpose": "Ghidra 是 NSA 研究部门开发和维护的软件逆向工程框架，可分析多种平台、处理器指令集和可执行文件格式，并提供反汇编、反编译、图形分析与脚本等功能。它可用于交互式或自动化分析，也支持用 Java 或 Python 编写扩展和脚本；README 提醒部分版本存在已知安全漏洞，使用前应查阅安全公告。",
-    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
-    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 4221
-  },
-  {
-    "rank": 9,
-    "owner": "akitaonrails",
-    "name": "ai-memory",
-    "url": "https://github.com/akitaonrails/ai-memory",
-    "language": "Rust",
-    "stars": 13090,
-    "purpose": "一个为 AI 编程代理提供跨会话、跨客户端长期记忆的独立 Rust 服务。它通过 MCP 和生命周期钩子自动记录提示、工具调用与决策，在会话结束后整理成以 Git 管理的 Markdown 知识库，并在下一次 Claude Code、Codex、Cursor、OpenCode 等会话开始时注入交接摘要。SQLite 仅作为全文检索和索引层，Markdown 才是可人工编辑、可备份和可审计的事实来源。",
-    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
-    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 3449
-  },
-  {
-    "rank": 10,
-    "owner": "ruvnet",
-    "name": "ruflo",
-    "url": "https://github.com/ruvnet/ruflo",
-    "language": "TypeScript",
-    "stars": 78823,
+    "stars": 24615,
     "purpose": "该项目本周首次进入榜单，但自动 README 中文摘要未能完成。请先查看项目 README；刷新任务不会用关键词猜测或伪造用途。",
     "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 3349
+    "weekly": 4478
+  },
+  {
+    "rank": 8,
+    "owner": "multica-ai",
+    "name": "andrej-karpathy-skills",
+    "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "language": "未注明",
+    "stars": 226981,
+    "purpose": "该项目本周首次进入榜单，但自动 README 中文摘要未能完成。请先查看项目 README；刷新任务不会用关键词猜测或伪造用途。",
+    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
+    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
+    "weekly": 4178
+  },
+  {
+    "rank": 9,
+    "owner": "pingdotgg",
+    "name": "t3code",
+    "url": "https://github.com/pingdotgg/t3code",
+    "language": "TypeScript",
+    "stars": 32974,
+    "purpose": "这是一个“agent harness control surface”，用于在本机上控制 Claude Code、Codex、Cursor 等 AI 代理，并通过移动端、网页端和桌面端统一管理它们。它能处理多个供应商的授权、任务控制、权限模式、后台服务和远程访问等功能，试图把分散的代理运行环境整合成统一控制面板。它的边界是 README 明确说明该项目非常早期，存在 bug，而且大多数情况下不接受贡献，说明它目前仍处于早期开发和有限协作状态。",
+    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
+    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
+    "weekly": 2775
+  },
+  {
+    "rank": 10,
+    "owner": "anthropics",
+    "name": "knowledge-work-plugins",
+    "url": "https://github.com/anthropics/knowledge-work-plugins",
+    "language": "Python",
+    "stars": 34074,
+    "purpose": "该项目本周首次进入榜单，但自动 README 中文摘要未能完成。请先查看项目 README；刷新任务不会用关键词猜测或伪造用途。",
+    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
+    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
+    "weekly": 2083
   }
 ];
 const mostStarredRepositories = [
@@ -129,7 +129,7 @@ const mostStarredRepositories = [
     "name": "build-your-own-x",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "language": "Markdown",
-    "stars": 555767,
+    "stars": 557683,
     "purpose": "一个按技术类别整理的教程索引，核心学习方法是从零重建数据库、Git、Docker、Web 服务器、神经网络等常见系统。它帮助开发者通过实现简化版本理解底层原理和设计取舍，本身不是框架、软件包或可部署产品，教程质量与维护状态需逐项判断。",
     "example": "未找到可公开核实的第三方网站或 App 声明由该仓库构建；它本身是教程索引。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -140,7 +140,7 @@ const mostStarredRepositories = [
     "name": "awesome",
     "url": "https://github.com/sindresorhus/awesome",
     "language": "未注明",
-    "stars": 523754,
+    "stars": 527604,
     "purpose": "Awesome Lists 生态的总目录和质量规范入口，汇集由社区维护的技术、科学、文化与兴趣主题资源清单。它适合在陌生领域快速找到经过初步筛选的工具、资料和项目，但收录代表维护者的主观选择，不构成安全性、质量或持续维护的保证。",
     "example": "awesome.re 是该项目的官方入口网站，提供跨主题 Awesome Lists 导航。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -151,7 +151,7 @@ const mostStarredRepositories = [
     "name": "public-apis",
     "url": "https://github.com/public-apis/public-apis",
     "language": "Python",
-    "stars": 491704,
+    "stars": 493593,
     "purpose": "一个由社区维护的公共 API 分类目录，而不是代替各服务商转发请求的统一 API 网关。它按动物、图书、天气、金融等领域收录接口，并标注认证方式、HTTPS 和 CORS 支持情况，方便开发者为原型或正式产品寻找可接入的数据与功能；配额、稳定性和商用条款仍需到对应服务商核实。",
     "example": "Public APIs 仓库本身是实际运行的公共 API 目录；未找到可归因到该目录的具名第三方产品。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -162,53 +162,53 @@ const mostStarredRepositories = [
     "name": "freeCodeCamp",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "language": "TypeScript",
-    "stars": 457797,
+    "stars": 458258,
     "purpose": "非营利编程教育平台 freeCodeCamp.org 的开源代码库与课程内容。平台通过交互式练习、项目和认证路径教授数学、编程、计算机科学、Web 开发、数据分析与机器学习等主题；仓库也供贡献者修订课程、翻译内容和开发平台功能。",
     "example": "freeCodeCamp.org 由该代码库实际运行，提供互动编码挑战、课程和认证项目。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
   },
   {
     "rank": 5,
+    "owner": "morluto",
+    "name": "rea",
+    "url": "https://github.com/morluto/rea",
+    "language": "TypeScript",
+    "stars": 412939,
+    "purpose": "REA 是一个面向 AI 智能体和命令行的逆向工程工具集，可检查原生二进制文件、JavaScript/Electron 应用、.NET 程序集和网站，并提供分析证据及结论的局限说明，供用户了解功能实现方式。分析在本地运行；原生分析可使用已安装的 Hopper、Ghidra 或 IDA，而静态 JavaScript 分析不需要原生分析引擎，Linux 上部分分析功能还要求 PATH 中有兼容 procps 的 `ps`。",
+    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
+    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
+  },
+  {
+    "rank": 6,
     "owner": "EbookFoundation",
     "name": "free-programming-books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "language": "Python",
-    "stars": 399948,
+    "stars": 400562,
     "purpose": "由社区维护的免费编程学习资源目录，收录多语言的书籍、课程、播客、交互式教程、习题集和备忘单。它还通过官方搜索 Web App 提供检索入口；项目只负责索引链接，不托管大部分内容，也不自动保证外部资源长期可用或版权状态不变。",
     "example": "Free Programming Books Search 是该仓库发布的搜索 Web App，可检索多语言免费编程资源。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
   },
   {
-    "rank": 6,
+    "rank": 7,
     "owner": "openclaw",
     "name": "openclaw",
     "url": "https://github.com/openclaw/openclaw",
     "language": "TypeScript",
-    "stars": 392892,
+    "stars": 393499,
     "purpose": "一个可由个人自行托管的 AI 助手与消息网关，可把模型、工具和自动化能力接入不同操作系统及聊天渠道。它适合构建能查询个人数据、调用外部服务或控制设备的助手，官方 Showcase 已展示公共交通查询、Oura 健康助手和 Bambu 3D 打印机控制等项目。由于会接触账户凭据和本地工具，部署时必须严格限制权限与网络暴露范围。",
     "example": "官方 Showcase 收录 Vienna 公共交通查询、Oura 健康助手、Bambu 3D 打印机控制等具名社区项目。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
   },
   {
-    "rank": 7,
+    "rank": 8,
     "owner": "donnemartin",
     "name": "system-design-primer",
     "url": "https://github.com/donnemartin/system-design-primer",
     "language": "Python",
-    "stars": 375348,
+    "stars": 376269,
     "purpose": "面向软件工程师的系统设计学习与面试准备资料库。它系统整理可扩展性、缓存、数据库、消息队列、一致性和高可用等概念，配有架构图、案例题、答案思路及 Anki 卡片，适合建立知识框架和模拟面试；内容是学习材料，不是可直接复用的生产架构模板。",
     "example": "未找到可公开核实的网站或 App 声明以该仓库作为产品依赖；它是系统设计学习资源。",
-    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
-  },
-  {
-    "rank": 8,
-    "owner": "morluto",
-    "name": "rea",
-    "url": "https://github.com/morluto/rea",
-    "language": "TypeScript",
-    "stars": 373956,
-    "purpose": "REA 是一个面向 AI 智能体和命令行的逆向工程工具集，可检查原生二进制文件、JavaScript/Electron 应用、.NET 程序集和网站，并提供分析证据及结论的局限说明，供用户了解功能实现方式。分析在本地运行；原生分析可使用已安装的 Hopper、Ghidra 或 IDA，而静态 JavaScript 分析不需要原生分析引擎，Linux 上部分分析功能还要求 PATH 中有兼容 procps 的 `ps`。",
-    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
   },
   {
@@ -217,7 +217,7 @@ const mostStarredRepositories = [
     "name": "developer-roadmap",
     "url": "https://github.com/nilbuild/developer-roadmap",
     "language": "TypeScript",
-    "stars": 370249,
+    "stars": 370837,
     "purpose": "roadmap.sh 的开源内容和代码仓库，为前端、后端、DevOps、AI、数据等岗位提供可交互的技能路线图、指南、项目题和测试题。用户可用它规划学习顺序、记录进度和查漏补缺；路线图是社区建议，不代表所有岗位或公司的统一招聘标准。",
     "example": "roadmap.sh 是该仓库对应的真实 Web 产品，提供互动路线、项目题目、测试题和学习进度。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -228,7 +228,7 @@ const mostStarredRepositories = [
     "name": "coding-interview-university",
     "url": "https://github.com/jwasham/coding-interview-university",
     "language": "未注明",
-    "stars": 363305,
+    "stars": 363602,
     "purpose": "一套以进入大型软件公司为目标的长期计算机科学和编码面试自学计划。它按阶段组织数据结构、算法、操作系统、网络、数据库和系统设计等资料，并附练习与复习建议；它是一份高强度课程清单，不是大学学历替代品，也不能保证面试结果。",
     "example": "未找到可公开核实的第三方工具或网站以该仓库作为产品依赖；项目本身是面试自学计划。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
