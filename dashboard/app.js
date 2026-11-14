@@ -1,125 +1,125 @@
 // GENERATED DATA START
-const dashboardGeneratedAt = "2026-11-07";
+const dashboardGeneratedAt = "2026-11-14";
 const trendingRepositories = [
   {
     "rank": 1,
-    "owner": "pingdotgg",
-    "name": "t3code",
-    "url": "https://github.com/pingdotgg/t3code",
-    "language": "TypeScript",
-    "stars": 50078,
-    "purpose": "这是一个“agent harness control surface”，用于在本机上控制 Claude Code、Codex、Cursor 等 AI 代理，并通过移动端、网页端和桌面端统一管理它们。它能处理多个供应商的授权、任务控制、权限模式、后台服务和远程访问等功能，试图把分散的代理运行环境整合成统一控制面板。它的边界是 README 明确说明该项目非常早期，存在 bug，而且大多数情况下不接受贡献，说明它目前仍处于早期开发和有限协作状态。",
+    "owner": "sherlock-project",
+    "name": "sherlock",
+    "url": "https://github.com/sherlock-project/sherlock",
+    "language": "Python",
+    "stars": 111303,
+    "purpose": "该项目本周首次进入榜单，但自动 README 中文摘要未能完成。请先查看项目 README；刷新任务不会用关键词猜测或伪造用途。",
     "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 16782
+    "weekly": 13364
   },
   {
     "rank": 2,
-    "owner": "thedotmack",
-    "name": "claude-mem",
-    "url": "https://github.com/thedotmack/claude-mem",
-    "language": "TypeScript",
-    "stars": 114108,
-    "purpose": "这是一个为 Claude Code 设计的持久化记忆压缩系统，目标是在不破坏上下文连续性的前提下，让代理长期保留和复用重要信息。它的核心能力是压缩与管理记忆，以减少上下文丢失并提升 Claude Code 在多轮协作中的持续性；README 也明确将其描述为“built for Claude Code”。它的边界是它不是通用型记忆中间件，而是专门贴合 Claude Code 生态和工作流的实现，README 没有宣称它支持其它平台或所有 AI 工具链。",
+    "owner": "cloudflare",
+    "name": "security-audit-skill",
+    "url": "https://github.com/cloudflare/security-audit-skill",
+    "language": "JavaScript",
+    "stars": 72057,
+    "purpose": "这是一个面向编码代理的安全审计技能，通过侦察、按覆盖范围狩猎、候选验证、结构化记录、独立核验和报告生成等阶段，帮助对单个代码库开展有流程约束的审计，并维护覆盖台账与审计发现。它适用于希望让编码代理系统化检查代码并生成可追溯报告的场景；其定位是单仓库审计的起点，而不是 Cloudflare 后来发展出的多阶段、全平台漏洞发现系统。",
     "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 8726
+    "weekly": 8829
   },
   {
     "rank": 3,
-    "owner": "D4Vinci",
-    "name": "Scrapling",
-    "url": "https://github.com/D4Vinci/Scrapling",
-    "language": "Python",
-    "stars": 98934,
-    "purpose": "该项目本周首次进入榜单，但自动 README 中文摘要未能完成。请先查看项目 README；刷新任务不会用关键词猜测或伪造用途。",
-    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
-    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 8372
-  },
-  {
-    "rank": 4,
-    "owner": "pbakaus",
-    "name": "impeccable",
-    "url": "https://github.com/pbakaus/impeccable",
-    "language": "Rust",
-    "stars": 104949,
-    "purpose": "Impeccable 是为 AI 编程代理提供的前端设计指导工具，包含一个技能、24 个设计命令，以及用于设计审查、无障碍、性能和响应式等方面的检查规则，可辅助规划、迭代和完善界面。CLI 与浏览器扩展中的 61 条确定性检测规则无需 LLM 或 API 密钥，但 README 将部分评审检查列为仅由 LLM 执行。",
-    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
-    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 8172
-  },
-  {
-    "rank": 5,
-    "owner": "Nutlope",
-    "name": "hallmark",
-    "url": "https://github.com/Nutlope/hallmark",
-    "language": "CSS",
-    "stars": 49753,
-    "purpose": "该项目本周首次进入榜单，但自动 README 中文摘要未能完成。请先查看项目 README；刷新任务不会用关键词猜测或伪造用途。",
-    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
-    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 6900
-  },
-  {
-    "rank": 6,
     "owner": "milind-soni",
     "name": "OpenMausBot",
     "url": "https://github.com/milind-soni/OpenMausBot",
     "language": "TypeScript",
-    "stars": 15739,
+    "stars": 22309,
     "purpose": "该项目本周首次进入榜单，但自动 README 中文摘要未能完成。请先查看项目 README；刷新任务不会用关键词猜测或伪造用途。",
     "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 6395
+    "weekly": 7763
+  },
+  {
+    "rank": 4,
+    "owner": "mattpocock",
+    "name": "skills",
+    "url": "https://github.com/mattpocock/skills",
+    "language": "Shell",
+    "stars": 323948,
+    "purpose": "一组小型、可组合且尽量不绑定具体模型的工程代理技能，覆盖方案规划、测试驱动开发、代码审查、问题分诊和研究等常见软件开发任务。开发者可以按需把单个技能接入支持技能机制的 AI 编程代理，以统一执行步骤和质量检查；它是工作流指令集合，而不是能够独立运行的开发工具。",
+    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
+    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
+    "weekly": 7599
+  },
+  {
+    "rank": 5,
+    "owner": "anthropics",
+    "name": "skills",
+    "url": "https://github.com/anthropics/skills",
+    "language": "Python",
+    "stars": 194230,
+    "purpose": "该项目本周首次进入榜单，但自动 README 中文摘要未能完成。请先查看项目 README；刷新任务不会用关键词猜测或伪造用途。",
+    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
+    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
+    "weekly": 6169
+  },
+  {
+    "rank": 6,
+    "owner": "google",
+    "name": "elephant-goldfish-model",
+    "url": "https://github.com/google/elephant-goldfish-model",
+    "language": "Python",
+    "stars": 18727,
+    "purpose": "该项目本周首次进入榜单，但自动 README 中文摘要未能完成。请先查看项目 README；刷新任务不会用关键词猜测或伪造用途。",
+    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
+    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
+    "weekly": 5560
   },
   {
     "rank": 7,
-    "owner": "Donchitos",
-    "name": "Claude-Code-Game-Studios",
-    "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
-    "language": "Shell",
-    "stars": 36196,
+    "owner": "vercel-labs",
+    "name": "agent-desktop",
+    "url": "https://github.com/vercel-labs/agent-desktop",
+    "language": "Rust",
+    "stars": 23417,
     "purpose": "该项目本周首次进入榜单，但自动 README 中文摘要未能完成。请先查看项目 README；刷新任务不会用关键词猜测或伪造用途。",
     "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 6018
+    "weekly": 5408
   },
   {
     "rank": 8,
-    "owner": "HKUDS",
-    "name": "DeepTutor",
-    "url": "https://github.com/HKUDS/DeepTutor",
-    "language": "Python",
-    "stars": 56058,
+    "owner": "vercel-labs",
+    "name": "agent-browser",
+    "url": "https://github.com/vercel-labs/agent-browser",
+    "language": "Rust",
+    "stars": 50809,
     "purpose": "该项目本周首次进入榜单，但自动 README 中文摘要未能完成。请先查看项目 README；刷新任务不会用关键词猜测或伪造用途。",
     "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 4588
+    "weekly": 4360
   },
   {
     "rank": 9,
-    "owner": "obra",
-    "name": "superpowers",
-    "url": "https://github.com/obra/superpowers",
-    "language": "Shell",
-    "stars": 313712,
-    "purpose": "Superpowers 是一套构建在可组合技能和初始指令之上的完整软件开发方法论，供编码 Agent 在开始写代码前澄清需求、分段确认设计、制定实施计划，并通过测试驱动开发、YAGNI、DRY 和子代理驱动流程完成任务。它适用于希望让 Agent 按规范、计划、增量实现、验证和审查等工程流程工作的开发者，并支持多种编码工具；README 明确指出安装方式取决于所使用的 harness，若使用多个 harness，需要分别安装。",
-    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
-    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 4577
-  },
-  {
-    "rank": 10,
-    "owner": "calesthio",
-    "name": "OpenMontage",
-    "url": "https://github.com/calesthio/OpenMontage",
+    "owner": "NVIDIA",
+    "name": "auto-ontology",
+    "url": "https://github.com/NVIDIA/auto-ontology",
     "language": "Python",
-    "stars": 77826,
+    "stars": 12629,
     "purpose": "该项目本周首次进入榜单，但自动 README 中文摘要未能完成。请先查看项目 README；刷新任务不会用关键词猜测或伪造用途。",
     "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
-    "weekly": 4405
+    "weekly": 4108
+  },
+  {
+    "rank": 10,
+    "owner": "ZhuLinsen",
+    "name": "daily_stock_analysis",
+    "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+    "language": "Python",
+    "stars": 71849,
+    "purpose": "该项目本周首次进入榜单，但自动 README 中文摘要未能完成。请先查看项目 README；刷新任务不会用关键词猜测或伪造用途。",
+    "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
+    "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。",
+    "weekly": 3778
   }
 ];
 const mostStarredRepositories = [
@@ -129,7 +129,7 @@ const mostStarredRepositories = [
     "name": "build-your-own-x",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "language": "Markdown",
-    "stars": 560504,
+    "stars": 562389,
     "purpose": "一个按技术类别整理的教程索引，核心学习方法是从零重建数据库、Git、Docker、Web 服务器、神经网络等常见系统。它帮助开发者通过实现简化版本理解底层原理和设计取舍，本身不是框架、软件包或可部署产品，教程质量与维护状态需逐项判断。",
     "example": "未找到可公开核实的第三方网站或 App 声明由该仓库构建；它本身是教程索引。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -140,7 +140,7 @@ const mostStarredRepositories = [
     "name": "awesome",
     "url": "https://github.com/sindresorhus/awesome",
     "language": "未注明",
-    "stars": 532642,
+    "stars": 536555,
     "purpose": "Awesome Lists 生态的总目录和质量规范入口，汇集由社区维护的技术、科学、文化与兴趣主题资源清单。它适合在陌生领域快速找到经过初步筛选的工具、资料和项目，但收录代表维护者的主观选择，不构成安全性、质量或持续维护的保证。",
     "example": "awesome.re 是该项目的官方入口网站，提供跨主题 Awesome Lists 导航。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -151,7 +151,7 @@ const mostStarredRepositories = [
     "name": "public-apis",
     "url": "https://github.com/public-apis/public-apis",
     "language": "Python",
-    "stars": 496799,
+    "stars": 498835,
     "purpose": "一个由社区维护的公共 API 分类目录，而不是代替各服务商转发请求的统一 API 网关。它按动物、图书、天气、金融等领域收录接口，并标注认证方式、HTTPS 和 CORS 支持情况，方便开发者为原型或正式产品寻找可接入的数据与功能；配额、稳定性和商用条款仍需到对应服务商核实。",
     "example": "Public APIs 仓库本身是实际运行的公共 API 目录；未找到可归因到该目录的具名第三方产品。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -162,7 +162,7 @@ const mostStarredRepositories = [
     "name": "freeCodeCamp",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "language": "TypeScript",
-    "stars": 458682,
+    "stars": 459106,
     "purpose": "非营利编程教育平台 freeCodeCamp.org 的开源代码库与课程内容。平台通过交互式练习、项目和认证路径教授数学、编程、计算机科学、Web 开发、数据分析与机器学习等主题；仓库也供贡献者修订课程、翻译内容和开发平台功能。",
     "example": "freeCodeCamp.org 由该代码库实际运行，提供互动编码挑战、课程和认证项目。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -173,7 +173,7 @@ const mostStarredRepositories = [
     "name": "rea",
     "url": "https://github.com/morluto/rea",
     "language": "TypeScript",
-    "stars": 438639,
+    "stars": 458122,
     "purpose": "REA 是一个面向 AI 智能体和命令行的逆向工程工具集，可检查原生二进制文件、JavaScript/Electron 应用、.NET 程序集和网站，并提供分析证据及结论的局限说明，供用户了解功能实现方式。分析在本地运行；原生分析可使用已安装的 Hopper、Ghidra 或 IDA，而静态 JavaScript 分析不需要原生分析引擎，Linux 上部分分析功能还要求 PATH 中有兼容 procps 的 `ps`。",
     "example": "本次自动刷新未找到可公开核实的真实网站、App、下游产品或第三方采用案例。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -184,7 +184,7 @@ const mostStarredRepositories = [
     "name": "free-programming-books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "language": "Python",
-    "stars": 401161,
+    "stars": 401563,
     "purpose": "由社区维护的免费编程学习资源目录，收录多语言的书籍、课程、播客、交互式教程、习题集和备忘单。它还通过官方搜索 Web App 提供检索入口；项目只负责索引链接，不托管大部分内容，也不自动保证外部资源长期可用或版权状态不变。",
     "example": "Free Programming Books Search 是该仓库发布的搜索 Web App，可检索多语言免费编程资源。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -195,7 +195,7 @@ const mostStarredRepositories = [
     "name": "openclaw",
     "url": "https://github.com/openclaw/openclaw",
     "language": "TypeScript",
-    "stars": 394088,
+    "stars": 394411,
     "purpose": "一个可由个人自行托管的 AI 助手与消息网关，可把模型、工具和自动化能力接入不同操作系统及聊天渠道。它适合构建能查询个人数据、调用外部服务或控制设备的助手，官方 Showcase 已展示公共交通查询、Oura 健康助手和 Bambu 3D 打印机控制等项目。由于会接触账户凭据和本地工具，部署时必须严格限制权限与网络暴露范围。",
     "example": "官方 Showcase 收录 Vienna 公共交通查询、Oura 健康助手、Bambu 3D 打印机控制等具名社区项目。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -206,7 +206,7 @@ const mostStarredRepositories = [
     "name": "system-design-primer",
     "url": "https://github.com/donnemartin/system-design-primer",
     "language": "Python",
-    "stars": 377167,
+    "stars": 377825,
     "purpose": "面向软件工程师的系统设计学习与面试准备资料库。它系统整理可扩展性、缓存、数据库、消息队列、一致性和高可用等概念，配有架构图、案例题、答案思路及 Anki 卡片，适合建立知识框架和模拟面试；内容是学习材料，不是可直接复用的生产架构模板。",
     "example": "未找到可公开核实的网站或 App 声明以该仓库作为产品依赖；它是系统设计学习资源。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -217,7 +217,7 @@ const mostStarredRepositories = [
     "name": "developer-roadmap",
     "url": "https://github.com/nilbuild/developer-roadmap",
     "language": "TypeScript",
-    "stars": 371433,
+    "stars": 371973,
     "purpose": "roadmap.sh 的开源内容和代码仓库，为前端、后端、DevOps、AI、数据等岗位提供可交互的技能路线图、指南、项目题和测试题。用户可用它规划学习顺序、记录进度和查漏补缺；路线图是社区建议，不代表所有岗位或公司的统一招聘标准。",
     "example": "roadmap.sh 是该仓库对应的真实 Web 产品，提供互动路线、项目题目、测试题和学习进度。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
@@ -228,7 +228,7 @@ const mostStarredRepositories = [
     "name": "coding-interview-university",
     "url": "https://github.com/jwasham/coding-interview-university",
     "language": "未注明",
-    "stars": 364059,
+    "stars": 364361,
     "purpose": "一套以进入大型软件公司为目标的长期计算机科学和编码面试自学计划。它按阶段组织数据结构、算法、操作系统、网络、数据库和系统设计等资料，并附练习与复习建议；它是一份高强度课程清单，不是大学学历替代品，也不能保证面试结果。",
     "example": "未找到可公开核实的第三方工具或网站以该仓库作为产品依赖；项目本身是面试自学计划。",
     "risk": "采用前需核实许可证、安全策略、维护活跃度、版本兼容性和生产环境支持情况。"
